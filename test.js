@@ -239,4 +239,17 @@ function sentsReverse(sentence) {
 //console.log(sentsReverse(sentence))
 const splitSentence = 'Carbon emission is increasing day by day'
 let get1 = splitSentence.split('in')
-console.log(get1)
+//console.log(get1)
+
+var classTen = ['oli', 'koli', 'jolil', 'molil']
+var classNine = ['jon', 'fonty', 'joy', 'mintu']
+var classEight = ['montu', 'laltu', 'sentu', 'pintu']
+
+var school = [classTen, classNine, classEight]
+for (let i = 0; i < school.length; i++) {
+  const sreni = school[i]
+  for (let j = 0; j < sreni.length; j++) {
+    console.log(sreni[j])
+  }
+  console.log('-----divided----')
+}
