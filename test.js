@@ -251,5 +251,5 @@ for (let i = 0; i < school.length; i++) {
   for (let j = 0; j < sreni.length; j++) {
     console.log(sreni[j])
   }
-  console.log('-----divided----')
+  //console.log('-----divided----')
 }

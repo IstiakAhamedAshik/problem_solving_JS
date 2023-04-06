@@ -131,7 +131,7 @@ function sentsReverse(sentence) {
     reverseWordArray.push(reverseWord)
     reverseWord = ' '
   })
-  console.log(reverseWordArray)
+  //console.log(reverseWordArray)
   var output = reverseWordArray.join(' ')
   return output
 }
@@ -154,3 +154,33 @@ if (str === input) {
   // console.log('string is not palindrome')
 }
 //console.log(str)
+
+/* Recursive function */
+
+//get the factorial value...
+
+const getFactorialNumber = (num) => {
+  if (num === 1) {
+    return 1
+  }
+  return getFactorialNumber(num - 1) * num
+}
+
+const getNumber = getFactorialNumber(9)
+
+console.log(getNumber)
+
+//get the prime number....
+function isPrime(n) {
+  let divisor = 2
+  if (n > 2) {
+    if (n % 2 === 0) {
+      return false
+    } else {
+      divisor++
+    }
+  }
+  return true
+}
+
+//console.log(isPrime(7))
