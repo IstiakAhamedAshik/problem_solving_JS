@@ -168,19 +168,34 @@ const getFactorialNumber = (num) => {
 
 const getNumber = getFactorialNumber(9)
 
-console.log(getNumber)
+//console.log(getNumber)
 
 //get the prime number....
 function isPrime(n) {
   let divisor = 2
-  if (n > 2) {
-    if (n % 2 === 0) {
-      return false
+  if (n > divisor) {
+    if (n % divisor === 0) {
+      return console.log(`${n} is not a prime number`)
     } else {
       divisor++
     }
   }
-  return true
+  return console.log(`${n} is  a prime number`)
 }
 
-//console.log(isPrime(7))
+//isPrime(5)
+const getMinite = (taka) => {
+  const getinputTaka = 100 * taka
+  const miniteTaka = 65
+  const cent1 = 100
+  const minite1 = 60
+  const getTheSecondFor1Paisa = 60 / miniteTaka
+  const getTheSecondFor1taka = getTheSecondFor1Paisa * cent1
+  const getTheSecondforGiven600paisa = getTheSecondFor1taka * getinputTaka
+  const getThepaisa = getTheSecondforGiven600paisa / minite1
+  const getTheminite = getThepaisa / cent1
+  return getTheminite
+}
+const minite = getMinite(6)
+
+console.log(minite)
